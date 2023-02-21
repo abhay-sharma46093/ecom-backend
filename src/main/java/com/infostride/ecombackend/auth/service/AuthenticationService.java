@@ -2,7 +2,7 @@ package com.infostride.ecombackend.auth.service;
 
 import com.infostride.ecombackend.auth.model.AuthenticationRequest;
 import com.infostride.ecombackend.model.Role;
-import com.infostride.ecombackend.register.model.RegisterRequest;
+import com.infostride.ecombackend.auth.model.RegisterRequest;
 import com.infostride.ecombackend.auth.model.AuthenticationResponse;
 import com.infostride.ecombackend.jwt.JwtService;
 import com.infostride.ecombackend.model.User;

@@ -1,4 +1,4 @@
-package com.infostride.ecombackend.register.model;
+package com.infostride.ecombackend.auth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

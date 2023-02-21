@@ -1,9 +1,9 @@
 package com.infostride.ecombackend.auth.controller;
 
-import com.infostride.ecombackend.auth.model.AuthenticationResponse;
 import com.infostride.ecombackend.auth.model.AuthenticationRequest;
+import com.infostride.ecombackend.auth.model.AuthenticationResponse;
 import com.infostride.ecombackend.auth.service.AuthenticationService;
-import com.infostride.ecombackend.register.model.RegisterRequest;
+import com.infostride.ecombackend.auth.model.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
