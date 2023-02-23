@@ -4,7 +4,6 @@ import com.infostride.ecombackend.products.model.CreateProductResponse;
 import com.infostride.ecombackend.products.model.Product;
 import com.infostride.ecombackend.products.repository.ProductsRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,6 +31,20 @@ public class ProductService {
     //get all products
     public List<Product> getAllProducts(){
         return productsRepository.findAll();
+    }
+
+
+    public Product getProductById(Integer id){
+        return productsRepository.findById(id).orElseThrow();
+    }
+
+    public Product updateProduct(Product product, Integer id){
+        return new Product();
+    }
+
+
+    public Product deleteProduct(Product product, Integer id){
+        return new Product();
     }
 
 

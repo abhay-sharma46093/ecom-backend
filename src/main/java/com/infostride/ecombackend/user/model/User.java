@@ -1,9 +1,7 @@
-package com.infostride.ecombackend.model;
+package com.infostride.ecombackend.user.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.infostride.ecombackend.order.model.Order;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

@@ -6,13 +6,15 @@ import com.infostride.ecombackend.products.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class CategoryService {
 
     private final CategoryRepository categoryRepository;
 
-    private CreateCategoryResponse createCategory(Category category){
+    public CreateCategoryResponse createCategory(Category category) {
         categoryRepository.save(category);
         CreateCategoryResponse response = new CreateCategoryResponse();
 
@@ -21,6 +23,19 @@ public class CategoryService {
         response.setCode(200);
 
         return response;
+    }
+
+    public List<Category> getAll() {
+        return categoryRepository.findAll();
+    }
+
+    public Boolean deleteCategory(Category category, Integer catId) {
+        var cat = categoryRepository.findById(catId).get();
+        if (cat == null) {
+            return false;
+        }
+        categoryRepository.delete(cat);
+        return true;
     }
 
 }

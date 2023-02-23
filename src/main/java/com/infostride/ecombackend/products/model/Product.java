@@ -1,25 +1,24 @@
 package com.infostride.ecombackend.products.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "_products")
+@Table
 public class Product {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Integer product_id;
 
     private String name;
 
@@ -27,5 +26,9 @@ public class Product {
 
     private String price;
 
+    private Integer qty;
+
+
+    private List<Category> category;
 
 }

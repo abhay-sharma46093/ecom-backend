@@ -19,7 +19,7 @@ public class Category {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Integer cat_id;
 
     private String name;
 
