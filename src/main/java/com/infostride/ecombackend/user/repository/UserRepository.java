@@ -1,6 +1,6 @@
 package com.infostride.ecombackend.user.repository;
 
-import com.infostride.ecombackend.model.User;
+import com.infostride.ecombackend.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
